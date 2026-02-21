@@ -9,7 +9,7 @@ body{
 /* Custom styles on specified objects */
 
 .barrameda-profile{
-    width: 80%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
