@@ -3,12 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Barrameda|Remendado Portfolio
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    <h1>Blog</h1>
-    <h3>This is Remendado and Barrameda's Portfolio</h3>
-    <hr>
+    <div class="container header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Our Daily Blogs</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="main-interface">
+        <h2 class="text-center my-5">Welcome to Our Daily Blogs!</h2>
+        <h4 class="text-center mb-4">Read and discover new things every day posted by our contributors.</h4>
+        <div class="container my-5">
+            <div class="row">
+                <aside class="col-lg-3 mb-4">
+                    <div class="card-header bg-dark text-white py-3">
+                        <h5 class="mb-0">Contributors</h5>
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <a href="#BarramedaSection" class="list-group-item list-group-item-action py-3">
+                            <img src="assets/images/barrameda-profile.png" alt="Barrameda Jhon Rey" 
+                            class="rounded-circle me-2" width="30" height="30">
+                            <i class="bi bi-person-fill me-2"></i> Barrameda Jhon Rey, B 
+                        </a>
+                        <a href="#RemendadoSection" class="list-group-item list-group-item-action py-3">
+                            <i class="bi bi-controller me-2"></i> Remendado, Carl Russell, M
+                        </a>
+                    </div>
+                </aside>
+
+                <main class="col-lg-9">
+                    <section id="BarramedaSection" class="mb-5">
+                        <h2 class="h3 fw-bold mb-3">Barrameda Jhon Rey, B</h2>
+                        <div class="card card-body">
+                            <ul class="list-unstyled">
+                                <li><strong>Name:</strong> Barrameda, Jhon Rey B.</li>
+                                <li><strong>Age:</strong> 19 years old</li>
+                                <li><strong>Address:</strong> Bacacay, Albay</li>
+                                <li><strong>Course:</strong> Bachelor of Science in Information Technology</li>
+                                <li><strong>University:</strong> Bicol University College of Science</li>
+                                <li><strong>Hobbies:</strong> Mobile Gaming, Singing, and Poetry</li>
+                            </ul>
+                        </div>
+                        <a href="pages/blogs/barrameda-jhon-rey/blog1.html" class="btn btn-outline-primary mt-3">
+                            Read Blogs
+                        </a>
+                    </section>
+                    <section id="RemendadoSection" class="mb-5">
+                        <h2 class="h3 fw-bold mb-3">Remendado Carl Russell, M</h2>
+                        <div class="card card-body">
+                            <ul class="list-unstyled">
+                                <li><strong>Name:</strong> Remendado, Carl Russell M.</li>
+                                <li><strong>Age:</strong> 67 years old</li>
+                                <li><strong>Address:</strong> Bacacay, Albay</li>
+                                <li><strong>Course:</strong> Bachelor of Science in Information Technology</li>
+                                <li><strong>University:</strong> Bicol University College of Science</li>
+                                <li><strong>Hobbies:</strong> Mobile Gaming, Singing, and Poetry</li>
+                            </ul>
+                        </div>
+                        <a href="pages/blogs/remendado-carl-russell/blog1.html" class="btn btn-outline-primary mt-3">
+                            Read Blogs
+                        </a>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
