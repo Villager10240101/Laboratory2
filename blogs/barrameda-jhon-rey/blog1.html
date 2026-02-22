@@ -6,39 +6,98 @@
     <title>Barrameda|Remendado Portfolio
     </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
     <div class="container header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Barrameda|Remendado Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../contact.html">Contact</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Barrameda | Remendado</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>
     <div class="blog-post">
-        <h1>Who am I?</h1>
-        <img src="../images/barrameda-profile.png" alt="Jhon Rey Barrameda" class="blog-image">
-        <hr>
-        <p>
-            My name is Jhon Rey Barrameda, I am 19 years old and I am currently a student at the Bicol University College of Science,
-            taking up Bachelor of Science in Information Technology. I am a person who loves to learn new things and explore different fields.
-            I am a person who is always willing to help others and share my knowledge with them if I can.
-        </p>
+        <div class="container my-5">
+            <div class="row">
+                <aside class="col-lg-3 mb-4">
+                    <div class="sticky-top" style="top: 20px;"> <div class="card shadow-sm border-0">
+                            <div class="card-header bg-dark text-white py-3">
+                                <h5 class="mb-0">Navigation</h5>
+                            </div>
+                            <div class="list-group list-group-flush">
+                                <a href="#who-am-i" class="list-group-item list-group-item-action py-3">
+                                    <i class="bi bi-person-fill me-2"></i> Who am I?
+                                </a>
+                                <a href="#hobbies" class="list-group-item list-group-item-action py-3">
+                                    <i class="bi bi-controller me-2"></i> Hobbies & Interests
+                                </a>
+                                <a href="#goals" class="list-group-item list-group-item-action py-3">
+                                    <i class="bi bi-rocket-takeoff-fill me-2"></i> Future Goals
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <main class="col-lg-9">
+                    <article class="p-4 p-md-5 border rounded bg-white shadow-sm">
+                        <section id="who-am-i" class="mb-5">
+                            <h1 class="display-5 fw-bold mb-4">Who's that Pokemon??</h1>
+                            <img src="../../assets/images/barrameda-profile.png" alt="Jhon Rey Barrameda" class="barrameda-profile img-fluid rounded-4 mb-4 border shadow-sm">
+                            
+                            <p class="text-dark">
+                                This is <strong>Jhon Rey Barrameda</strong>, a 19-year-old student of 
+                                Bicol University College of Science, 
+                                Bachelor of Science in Information Technology.<br><br>
+                                Jhon Rey loves to learn new things and explore different fields as long as he will not get too stressed, because 
+                                he will abandon it for sure...
+                            </p>
+                        </section>
+
+                        <hr class="my-5 opacity-25">
+
+                        <section id="hobbies" class="mb-5">
+                            <h2 class="h3 fw-bold mb-3">Hobbies and Interests</h2>
+                            <p class="text-muted italic">Jhon Rey enjoys playing video games, reading and watching isekai novel/anime,
+                                and compose poems when he has the time and mood to do so.<br><br>
+                                He currently has plans to study PHP, SQL, JavaScript, and Python,
+                                however he started to get bored and loses interest. Maybe he will get back to it in the future.
+                            </p>
+                        </section>
+
+                        <hr class="my-5 opacity-25">
+
+                        <section id="goals" class="mb-5">
+                            <h2 class="h3 fw-bold mb-3">Future Goals</h2>
+                            <p class="text-muted">This person aims to become a skilled software developer in the future. 
+                                He used to dream of becoming a game developer, but he is not sure if he still wants to pursue that path. Who knows that 
+                                game development is such a drag... <br><br>
+                                When talking about software development, he is interested in backend development, as he really sucks at UI/UX design and frontend development.
+                            </p>
+                        </section>
+                    </article>
+                </main>
+            </div>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
