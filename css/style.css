@@ -38,15 +38,15 @@ body{
     background: linear-gradient(to right, #031401, #000000, #031401); 
     z-index: 5;
     position: absolute;
-    top: 45vh;
+    top: 50vh;
 }
 
 .picture-frame {
     position: absolute;
-    top: 15vh;
-    left: 30vh;
-    width: 37vh;
-    height: 37vh;
+    top: 12vh;
+    left: 15%;
+    width: 45vh;
+    height: 45vh;
     background-color: #B76939;
     z-index: 6;
 }
@@ -55,18 +55,18 @@ body{
 .portfolio-ghost-text-container {
     justify-self: center;
     position: absolute;
-    left: 50%;
+    left: 49.67%;
     pointer-events: none;
     transform: translateX(-50%);
 }
 
 .portfolio-main-text-container { 
-    top: 5vh; 
+    top: 1vh; 
     z-index: 20;
 }
 
 .portfolio-ghost-text-container { 
-    top: 20vh; 
+    top: 16vh; 
     z-index: 5;}
 
 .portfolio-svg {
@@ -76,7 +76,7 @@ body{
 
 .portfolio-base {
     font-family: 'Abril Fatface', serif;
-    font-size: 90px;
+    font-size: 80px;
     text-transform: uppercase;
 }
 
