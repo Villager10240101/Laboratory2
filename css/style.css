@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 body{
-	margin: 0;
-	padding: 0;
-	font-family: Segoe UI, Tahoma, Geneva, "Verdana", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI, Tahoma, Geneva, "Verdana", sans-serif;
+    background-color: #D9D3BE;
 }
-
-
 
 /* Custom styles on specified objects */
 
@@ -17,18 +18,75 @@ body{
 /* Hero on html styles */
 .hero-interface{
     margin: 0;
+    position: relative; /* Allows absolute positioning of text/boxes inside */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .hero-upper-half{
     width: 100%;
     height: 50vh;
-    background-color: #334B35;
+    background: linear-gradient(to bottom, #334B35, #334b35, #2f4431);
+    flex-shrink: 0;
 }
 
 .hero-middle{
     width: 100%;
     height: 10vh;
     align-self: center;
-    background-color: #000000; 
-    z-index: 100;
+    background: linear-gradient(to right, #031401, #000000, #031401); 
+    z-index: 5;
+    position: absolute;
+    top: 45vh;
+}
+
+.picture-frame {
+    position: absolute;
+    top: 15vh;
+    left: 30vh;
+    width: 37vh;
+    height: 37vh;
+    background-color: #B76939;
+    z-index: 6;
+}
+
+.portfolio-main-text-container, 
+.portfolio-ghost-text-container {
+    justify-self: center;
+    position: absolute;
+    left: 50%;
+    pointer-events: none;
+    transform: translateX(-50%);
+}
+
+.portfolio-main-text-container { 
+    top: 5vh; 
+    z-index: 20;
+}
+
+.portfolio-ghost-text-container { 
+    top: 20vh; 
+    z-index: 5;}
+
+.portfolio-svg {
+    width: 650px;
+    display: block;
+}
+
+.portfolio-base {
+    font-family: 'Abril Fatface', serif;
+    font-size: 90px;
+    text-transform: uppercase;
+}
+
+.solid {
+    fill: #D9D3BE; /* main text */
+}
+
+.outline {
+    fill: none;
+    stroke: #D1A65B; /* ghost texts */
+    stroke-width: 1px;
+    opacity: 0.7;
 }
