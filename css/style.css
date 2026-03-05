@@ -142,10 +142,10 @@ body {
     color: var(--bg-parchment);
 }
 
-/* --- Page Transition Animations --- */
+/* Page Transition Animations*/
 .page-hidden {
     opacity: 0;
-    transform: translateY(20px); /* Slight drop down initially */
+    transform: translateY(20px); 
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -156,11 +156,11 @@ body {
 
 .page-exiting {
     opacity: 0;
-    transform: translateY(-20px); /* Floats up when leaving */
+    transform: translateY(-20px); 
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-/* --- Portfolio Page Styles --- */
+/*Portfolio Page Styles */
 .portfolio-container {
     max-width: 1000px;
     margin: 0px auto;
