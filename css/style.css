@@ -3,26 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6,p,li,span{
-    cursor: default;
-}
 
 :root {
-    --bg-parchment: #F8F5F0;
+    --bg-color: #F8F5F0;
     --text-espresso: #3A2C24;
-    --shape-taupe: #E6DDD3;
+    --off-white: #E6DDD3;
     --text-burnt-orange: #b1470a;
 }
 /*landing page*/
 .index-body {
-    background-color: var(--bg-parchment);
     height: 100vh; 
     overflow: hidden; 
 }
 
 body {
-    background-color: var(--bg-parchment);
-    min-height: 100vh; 
+    background-color: var(--bg-color);
+    min-height: 100vh;
 }
 
 .landing-container {
@@ -104,7 +100,7 @@ body {
     height: clamp(140px, 12vw, 220px);
     border-radius: 50%;
     aspect-ratio: 1 / 1;
-    background-color: var(--shape-taupe);
+    background-color: var(--off-white);
     border: 1px solid rgba(58, 44, 36, 0.2);
     overflow: hidden; 
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -139,7 +135,7 @@ body {
 
 .profile-btn:hover {
     background-color: var(--text-espresso);
-    color: var(--bg-parchment);
+    color: var(--bg-color);
 }
 
 /* Page Transition Animations*/
@@ -169,26 +165,6 @@ body {
     min-height: 100vh;
 }
 
-
-.portfolio-nav {
-    padding: 40px 5%;
-}
-
-.back-btn {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--text-espresso);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.3s ease;
-}
-
-.back-btn:hover {
-    border-bottom: 1px solid var(--text-espresso);
-}
-
 .portfolio-header {
     display: flex;
     justify-self: center;
@@ -200,20 +176,9 @@ body {
 }
 
 .profile-avatar {
-    width: auto;
-    height: auto;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;     
-}
-
-.blog-profile-avatar{
-    width: 120px; 
-    height: 120px; 
-    aspect-ratio: 1/1; 
-    border-radius: 50%; 
-    overflow: hidden; 
-    flex-shrink: 0;
 }
 
 .profile-avatar img {
@@ -273,29 +238,6 @@ body {
 
 .info-section li {
     margin-bottom: 12px;
-}
-
-.tags-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.tag {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: 8px 16px;
-    background-color: var(--bg-parchment);
-    border: 1px solid var(--text-espresso);
-    border-radius: 4px;
-}
-
-.tag:hover{
-    background-color: var(--text-espresso);
-    color: var(--bg-parchment);
-    transition: 0.3s ease;
 }
 
 .top-navbar {
@@ -430,7 +372,7 @@ body {
     height: 400px;
     overflow: hidden;
     margin-bottom: 2rem;
-    background-color: var(--shape-taupe);
+    background-color: var(--off-white);
 }
 .blog-image-container img {
     width: 100%;
